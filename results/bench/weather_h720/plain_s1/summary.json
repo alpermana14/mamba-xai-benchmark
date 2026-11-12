@@ -1,0 +1,66 @@
+{
+  "args": {
+    "task": "weather_h720",
+    "model": "plain",
+    "seed": 1,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "weather_h720",
+  "channels": [
+    "p (mbar)",
+    "T (degC)",
+    "Tpot (K)",
+    "Tdew (degC)",
+    "rh (%)",
+    "VPmax (mbar)",
+    "VPact (mbar)",
+    "VPdef (mbar)",
+    "sh (g/kg)",
+    "H2OC (mmol/mol)",
+    "rho (g/m**3)",
+    "wv (m/s)",
+    "max. wv (m/s)",
+    "wd (deg)",
+    "rain (mm)",
+    "raining (s)",
+    "SWDR (W/m\ufffd)",
+    "PAR (\ufffdmol/m\ufffd/s)",
+    "max. PAR (\ufffdmol/m\ufffd/s)",
+    "Tlog (degC)",
+    "OT"
+  ],
+  "n_params": 23374026,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 2,
+    "last_epoch": 12,
+    "best_val_y": 0.9644254446029663,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.44430972893186776,
+    "lr_at_end": 0.00025,
+    "n_lr_reductions": 2,
+    "loss_spike_epochs": [],
+    "verdict": "overfitting (train fell, val rose after best epoch): more epochs will not help; regularise/more data",
+    "seconds": 367.58384370803833,
+    "seconds_per_epoch": 29.94295048713684
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.8427791595458984,
+      "trivial_mse": 1.3039977550506592,
+      "skill": 0.3536958508696534,
+      "oracle_mse": null
+    },
+    "passes_quality_gate": true
+  }
+}

@@ -1,0 +1,9 @@
+a,b,metric,n,diff,p,per_seed,same_sign_all_seeds,task,model,confirmatory,p_holm,passes
+MambaLRP,IG,del_aopc_mean,150,-0.015936426719029746,3.813441084842507e-07,"{0: -0.0139, 1: -0.0197, 2: -0.0142}",True,etth1,smamba,True,1.144032325452752e-06,False
+MambaLRP,IG,del_aopc_interp,150,0.013502465750401219,0.8284377369429236,"{0: 0.0411, 1: 0.0062, 2: -0.0068}",False,etth1,smamba,True,1.0,False
+MambaLRP,IG,del_aopc_mean,150,-0.020933138330777486,2.3488080749215283e-19,"{0: -0.021, 1: -0.0242, 2: -0.0177}",True,etth1,timemachine,True,9.395232299686113e-19,False
+MambaLRP,IG,del_aopc_interp,150,-0.0005415048201878865,0.6681264793637369,"{0: 0.0019, 1: -0.0005, 2: -0.003}",False,etth1,timemachine,True,1.0,False
+MambaLRP,IG,del_aopc_mean,150,0.0004536784812808037,0.34963094343526613,"{0: -0.0003, 1: 0.0019, 2: -0.0002}",False,weather,smamba,True,0.5505164982477682,False
+MambaLRP,IG,del_aopc_interp,150,0.0017951600096421316,0.008134494793008727,"{0: 0.0013, 1: 0.0016, 2: 0.0024}",True,weather,smamba,True,0.03253797917203491,True
+MambaLRP,IG,del_aopc_mean,150,0.00010192881027857463,0.2752582491238841,"{0: -0.0001, 1: 0.0001, 2: 0.0004}",False,weather,timemachine,True,0.5505164982477682,False
+MambaLRP,IG,del_aopc_interp,150,-0.00016289200633764266,0.32599572871150484,"{0: -0.0003, 1: 0.0, 2: -0.0002}",False,weather,timemachine,True,0.9779871861345145,False

@@ -1,0 +1,51 @@
+{
+  "args": {
+    "task": "g1",
+    "model": "plain",
+    "seed": 2,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g1",
+  "channels": [
+    "x_lag",
+    "x_evt",
+    "r",
+    "dis_ar",
+    "dis_evt",
+    "y"
+  ],
+  "n_params": 354912,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 4,
+    "last_epoch": 14,
+    "best_val_y": 0.10212252289056778,
+    "oracle_val_y": 0.05032601221235143,
+    "gap_to_oracle": 2.0292194513576822,
+    "train_at_best": 0.09359903335004088,
+    "lr_at_end": 0.00025,
+    "n_lr_reductions": 2,
+    "loss_spike_epochs": [],
+    "verdict": "overfitting (train fell, val rose after best epoch): more epochs will not help; regularise/more data",
+    "seconds": 542.6876020431519,
+    "seconds_per_epoch": 38.64635396003723
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.09577511250972748,
+      "trivial_mse": 1.0334291458129883,
+      "skill": 0.9073230004226539,
+      "oracle_mse": 0.04752104304630193
+    },
+    "passes_quality_gate": true
+  }
+}

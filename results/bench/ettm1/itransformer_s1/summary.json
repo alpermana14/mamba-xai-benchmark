@@ -1,0 +1,52 @@
+{
+  "args": {
+    "task": "ettm1",
+    "model": "itransformer",
+    "seed": 1,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "ettm1",
+  "channels": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "n_params": 224224,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 1,
+    "last_epoch": 11,
+    "best_val_y": 0.055496979504823685,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.09301680726489618,
+    "lr_at_end": 0.00025,
+    "n_lr_reductions": 2,
+    "loss_spike_epochs": [],
+    "verdict": "overfitting (train fell, val rose after best epoch): more epochs will not help; regularise/more data",
+    "seconds": 11.663194179534912,
+    "seconds_per_epoch": 0.8930270671844482
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.029016869142651558,
+      "trivial_mse": 1.9101996421813965,
+      "skill": 0.984809509696319,
+      "oracle_mse": null
+    },
+    "passes_quality_gate": true
+  }
+}

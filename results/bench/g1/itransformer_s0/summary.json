@@ -1,0 +1,51 @@
+{
+  "args": {
+    "task": "g1",
+    "model": "itransformer",
+    "seed": 0,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g1",
+  "channels": [
+    "x_lag",
+    "x_evt",
+    "r",
+    "dis_ar",
+    "dis_evt",
+    "y"
+  ],
+  "n_params": 214936,
+  "training": {
+    "stop": "max_epochs",
+    "best_epoch": 96,
+    "last_epoch": 100,
+    "best_val_y": 0.1117328405380249,
+    "oracle_val_y": 0.05562191446944042,
+    "gap_to_oracle": 2.0087917074377715,
+    "train_at_best": 0.11752021024678241,
+    "lr_at_end": 1.5625e-05,
+    "n_lr_reductions": 6,
+    "loss_spike_epochs": [],
+    "verdict": "STILL IMPROVING at max epochs: increase --epochs",
+    "seconds": 126.0008430480957,
+    "seconds_per_epoch": 1.1856443881988525
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.10401348024606705,
+      "trivial_mse": 1.0237843990325928,
+      "skill": 0.8984029446587067,
+      "oracle_mse": 0.04894737508198508
+    },
+    "passes_quality_gate": true
+  }
+}

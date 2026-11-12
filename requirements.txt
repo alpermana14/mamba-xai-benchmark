@@ -1,0 +1,13 @@
+# Main benchmark (tested with Python 3.13, CUDA 13)
+torch>=2.10
+numpy>=2.0
+pandas>=2.2
+scipy>=1.14
+scikit-learn>=1.5
+shap>=0.46
+matplotlib>=3.9
+tqdm
+tabulate
+pytest
+# Official-code replication (Linux/WSL only): see third_party/official/wsl_setup.sh
+#   torch 2.10.0+cu130, mamba_ssm 2.3.2.post1, einops, reformer-pytorch

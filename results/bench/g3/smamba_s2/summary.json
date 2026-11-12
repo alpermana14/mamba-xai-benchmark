@@ -1,0 +1,59 @@
+{
+  "args": {
+    "task": "g3",
+    "model": "smamba",
+    "seed": 2,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g3",
+  "channels": [
+    "hourofday",
+    "dayofweek",
+    "month",
+    "holiday",
+    "temperature",
+    "noise1",
+    "noise2",
+    "load"
+  ],
+  "n_params": 364072,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 94,
+    "last_epoch": 97,
+    "best_val_y": 0.04270006716251373,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.041164476734399796,
+    "lr_at_end": 1.5625e-05,
+    "n_lr_reductions": 6,
+    "loss_spike_epochs": [],
+    "verdict": "plateau after LR reductions: capacity/optimisation limit, not too few epochs",
+    "seconds": 486.7956397533417,
+    "seconds_per_epoch": 5.275863170623779
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.04318896681070328,
+      "trivial_mse": 1.0127453804016113,
+      "skill": 0.9573545654747135,
+      "oracle_mse": null
+    },
+    "gt": {
+      "mse": 0.041516076773405075,
+      "trivial_mse": 0.9558141827583313,
+      "skill": 0.9565646989526813,
+      "oracle_mse": 0.0010200378019362688
+    },
+    "passes_quality_gate": true
+  }
+}

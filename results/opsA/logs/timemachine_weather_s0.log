@@ -1,0 +1,410 @@
+Args in experiment:
+Namespace(random_seed=0, is_training=1, model_id='weather_96_96', model='TimeMachine', model_id_name='weather', data='custom', root_path='/mnt/c/Users/User/Documents/5th paper/dataset/weather', data_path='weather.csv', features='M', target='OT', freq='h', checkpoints='/mnt/c/Users/User/Documents/5th paper/results/opsA/ckpt/timemachine_weather_s0/', seq_len=96, label_len=48, pred_len=96, n1=128, n2=16, revin=1, ch_ind=1, residual=1, d_state=256, dconv=2, e_fact=1, enc_in=21, dropout=0.1, embed='timeF', do_predict=False, num_workers=10, itr=1, train_epochs=100, batch_size=512, patience=100, learning_rate=0.001, des='Exp', loss='mse', lradj='constant', pct_start=0.2, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:0
+>>>>>>>start training : weather_96_96_TimeMachine_weather_ftM_sl96_ll48_pl96_n1128_n216_dr0.1_cin1_rin1_res1_dst256_dconv2_efact1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 36696
+val 5175
+test 10444
+Epoch: 1 cost time: 86.43591356277466
+Epoch: 1, Steps: 71 | Train Loss: 0.6873316 Vali Loss: 0.6075050 Test Loss: 0.2177941
+Validation loss decreased (inf --> 0.607505).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 85.55129051208496
+Epoch: 2, Steps: 71 | Train Loss: 0.5290205 Vali Loss: 0.4706643 Test Loss: 0.1985773
+Validation loss decreased (0.607505 --> 0.470664).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 3 cost time: 85.48916244506836
+Epoch: 3, Steps: 71 | Train Loss: 0.4752770 Vali Loss: 0.4280106 Test Loss: 0.1829049
+Validation loss decreased (0.470664 --> 0.428011).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 4 cost time: 86.84460520744324
+Epoch: 4, Steps: 71 | Train Loss: 0.4538189 Vali Loss: 0.4179661 Test Loss: 0.1800822
+Validation loss decreased (0.428011 --> 0.417966).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 5 cost time: 85.53078007698059
+Epoch: 5, Steps: 71 | Train Loss: 0.4468750 Vali Loss: 0.4105371 Test Loss: 0.1770622
+Validation loss decreased (0.417966 --> 0.410537).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 6 cost time: 85.52463507652283
+Epoch: 6, Steps: 71 | Train Loss: 0.4407590 Vali Loss: 0.4043849 Test Loss: 0.1753029
+Validation loss decreased (0.410537 --> 0.404385).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 7 cost time: 85.5252947807312
+Epoch: 7, Steps: 71 | Train Loss: 0.4365019 Vali Loss: 0.4082457 Test Loss: 0.1721781
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 8 cost time: 85.54580521583557
+Epoch: 8, Steps: 71 | Train Loss: 0.4374327 Vali Loss: 0.4023419 Test Loss: 0.1728633
+Validation loss decreased (0.404385 --> 0.402342).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 9 cost time: 86.9387538433075
+Epoch: 9, Steps: 71 | Train Loss: 0.4329543 Vali Loss: 0.4060054 Test Loss: 0.1735677
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 10 cost time: 86.80911660194397
+Epoch: 10, Steps: 71 | Train Loss: 0.4316568 Vali Loss: 0.4032931 Test Loss: 0.1726599
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 11 cost time: 85.50858449935913
+Epoch: 11, Steps: 71 | Train Loss: 0.4305265 Vali Loss: 0.4032429 Test Loss: 0.1726603
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 12 cost time: 85.53936004638672
+Epoch: 12, Steps: 71 | Train Loss: 0.4267129 Vali Loss: 0.4021202 Test Loss: 0.1721601
+Validation loss decreased (0.402342 --> 0.402120).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 13 cost time: 85.51760745048523
+Epoch: 13, Steps: 71 | Train Loss: 0.4244461 Vali Loss: 0.4073513 Test Loss: 0.1706145
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 14 cost time: 85.61574411392212
+Epoch: 14, Steps: 71 | Train Loss: 0.4246847 Vali Loss: 0.4048706 Test Loss: 0.1709252
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 15 cost time: 86.8481798171997
+Epoch: 15, Steps: 71 | Train Loss: 0.4248761 Vali Loss: 0.4028737 Test Loss: 0.1708764
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 16 cost time: 85.48918914794922
+Epoch: 16, Steps: 71 | Train Loss: 0.4246083 Vali Loss: 0.4064953 Test Loss: 0.1699493
+EarlyStopping counter: 4 out of 100
+Updating learning rate to 0.001
+Epoch: 17 cost time: 85.54058957099915
+Epoch: 17, Steps: 71 | Train Loss: 0.4238864 Vali Loss: 0.4030957 Test Loss: 0.1697623
+EarlyStopping counter: 5 out of 100
+Updating learning rate to 0.001
+Epoch: 18 cost time: 85.56976985931396
+Epoch: 18, Steps: 71 | Train Loss: 0.4204543 Vali Loss: 0.3991229 Test Loss: 0.1679926
+Validation loss decreased (0.402120 --> 0.399123).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 19 cost time: 85.4690842628479
+Epoch: 19, Steps: 71 | Train Loss: 0.4198244 Vali Loss: 0.3998437 Test Loss: 0.1676186
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 20 cost time: 86.89231061935425
+Epoch: 20, Steps: 71 | Train Loss: 0.4196308 Vali Loss: 0.3981635 Test Loss: 0.1675218
+Validation loss decreased (0.399123 --> 0.398163).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 21 cost time: 85.55310225486755
+Epoch: 21, Steps: 71 | Train Loss: 0.4208098 Vali Loss: 0.4053233 Test Loss: 0.1669564
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 22 cost time: 85.5426983833313
+Epoch: 22, Steps: 71 | Train Loss: 0.4187687 Vali Loss: 0.4038829 Test Loss: 0.1667531
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 23 cost time: 85.48281645774841
+Epoch: 23, Steps: 71 | Train Loss: 0.4171616 Vali Loss: 0.3999936 Test Loss: 0.1677185
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 24 cost time: 85.42517232894897
+Epoch: 24, Steps: 71 | Train Loss: 0.4166328 Vali Loss: 0.4027971 Test Loss: 0.1662264
+EarlyStopping counter: 4 out of 100
+Updating learning rate to 0.001
+Epoch: 25 cost time: 86.89955639839172
+Epoch: 25, Steps: 71 | Train Loss: 0.4156183 Vali Loss: 0.4019238 Test Loss: 0.1683492
+EarlyStopping counter: 5 out of 100
+Updating learning rate to 0.001
+Epoch: 26 cost time: 85.54038906097412
+Epoch: 26, Steps: 71 | Train Loss: 0.4157237 Vali Loss: 0.4019416 Test Loss: 0.1654604
+EarlyStopping counter: 6 out of 100
+Updating learning rate to 0.001
+Epoch: 27 cost time: 85.49343204498291
+Epoch: 27, Steps: 71 | Train Loss: 0.4143025 Vali Loss: 0.4023230 Test Loss: 0.1658238
+EarlyStopping counter: 7 out of 100
+Updating learning rate to 0.001
+Epoch: 28 cost time: 85.47331833839417
+Epoch: 28, Steps: 71 | Train Loss: 0.4159496 Vali Loss: 0.4017327 Test Loss: 0.1658921
+EarlyStopping counter: 8 out of 100
+Updating learning rate to 0.001
+Epoch: 29 cost time: 85.5173032283783
+Epoch: 29, Steps: 71 | Train Loss: 0.4157617 Vali Loss: 0.4027268 Test Loss: 0.1653648
+EarlyStopping counter: 9 out of 100
+Updating learning rate to 0.001
+Epoch: 30 cost time: 86.93899393081665
+Epoch: 30, Steps: 71 | Train Loss: 0.4160216 Vali Loss: 0.4008920 Test Loss: 0.1662365
+EarlyStopping counter: 10 out of 100
+Updating learning rate to 0.001
+Epoch: 31 cost time: 85.49580597877502
+Epoch: 31, Steps: 71 | Train Loss: 0.4126985 Vali Loss: 0.4008043 Test Loss: 0.1653026
+EarlyStopping counter: 11 out of 100
+Updating learning rate to 0.001
+Epoch: 32 cost time: 85.55604195594788
+Epoch: 32, Steps: 71 | Train Loss: 0.4125772 Vali Loss: 0.3985488 Test Loss: 0.1655603
+EarlyStopping counter: 12 out of 100
+Updating learning rate to 0.001
+Epoch: 33 cost time: 85.51953506469727
+Epoch: 33, Steps: 71 | Train Loss: 0.4108046 Vali Loss: 0.3995933 Test Loss: 0.1647881
+EarlyStopping counter: 13 out of 100
+Updating learning rate to 0.001
+Epoch: 34 cost time: 85.52540278434753
+Epoch: 34, Steps: 71 | Train Loss: 0.4103802 Vali Loss: 0.3997770 Test Loss: 0.1653100
+EarlyStopping counter: 14 out of 100
+Updating learning rate to 0.001
+Epoch: 35 cost time: 86.96757340431213
+Epoch: 35, Steps: 71 | Train Loss: 0.4117214 Vali Loss: 0.3988406 Test Loss: 0.1660507
+EarlyStopping counter: 15 out of 100
+Updating learning rate to 0.001
+Epoch: 36 cost time: 85.50234127044678
+Epoch: 36, Steps: 71 | Train Loss: 0.4110825 Vali Loss: 0.3989111 Test Loss: 0.1650341
+EarlyStopping counter: 16 out of 100
+Updating learning rate to 0.001
+Epoch: 37 cost time: 85.49547028541565
+Epoch: 37, Steps: 71 | Train Loss: 0.4103828 Vali Loss: 0.3979804 Test Loss: 0.1652208
+Validation loss decreased (0.398163 --> 0.397980).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 38 cost time: 85.52519965171814
+Epoch: 38, Steps: 71 | Train Loss: 0.4111551 Vali Loss: 0.3985432 Test Loss: 0.1654848
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 39 cost time: 85.5265884399414
+Epoch: 39, Steps: 71 | Train Loss: 0.4097969 Vali Loss: 0.3993493 Test Loss: 0.1643184
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 40 cost time: 86.979332447052
+Epoch: 40, Steps: 71 | Train Loss: 0.4100181 Vali Loss: 0.3986937 Test Loss: 0.1658320
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 41 cost time: 85.5330753326416
+Epoch: 41, Steps: 71 | Train Loss: 0.4139553 Vali Loss: 0.3990148 Test Loss: 0.1658078
+EarlyStopping counter: 4 out of 100
+Updating learning rate to 0.001
+Epoch: 42 cost time: 85.50590372085571
+Epoch: 42, Steps: 71 | Train Loss: 0.4130693 Vali Loss: 0.3991063 Test Loss: 0.1653242
+EarlyStopping counter: 5 out of 100
+Updating learning rate to 0.001
+Epoch: 43 cost time: 85.5813398361206
+Epoch: 43, Steps: 71 | Train Loss: 0.4111309 Vali Loss: 0.3975015 Test Loss: 0.1665090
+Validation loss decreased (0.397980 --> 0.397501).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 44 cost time: 85.45753765106201
+Epoch: 44, Steps: 71 | Train Loss: 0.4094760 Vali Loss: 0.3992719 Test Loss: 0.1663854
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 45 cost time: 87.06853890419006
+Epoch: 45, Steps: 71 | Train Loss: 0.4094703 Vali Loss: 0.4003280 Test Loss: 0.1641499
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 46 cost time: 85.58793687820435
+Epoch: 46, Steps: 71 | Train Loss: 0.4076747 Vali Loss: 0.4005136 Test Loss: 0.1645791
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 47 cost time: 85.46201658248901
+Epoch: 47, Steps: 71 | Train Loss: 0.4083340 Vali Loss: 0.4000563 Test Loss: 0.1637952
+EarlyStopping counter: 4 out of 100
+Updating learning rate to 0.001
+Epoch: 48 cost time: 85.45289134979248
+Epoch: 48, Steps: 71 | Train Loss: 0.4087137 Vali Loss: 0.3993329 Test Loss: 0.1651664
+EarlyStopping counter: 5 out of 100
+Updating learning rate to 0.001
+Epoch: 49 cost time: 85.52373814582825
+Epoch: 49, Steps: 71 | Train Loss: 0.4080299 Vali Loss: 0.3981280 Test Loss: 0.1649445
+EarlyStopping counter: 6 out of 100
+Updating learning rate to 0.001
+Epoch: 50 cost time: 87.05063533782959
+Epoch: 50, Steps: 71 | Train Loss: 0.4060350 Vali Loss: 0.3980321 Test Loss: 0.1655111
+EarlyStopping counter: 7 out of 100
+Updating learning rate to 0.001
+Epoch: 51 cost time: 85.3763496875763
+Epoch: 51, Steps: 71 | Train Loss: 0.4076420 Vali Loss: 0.3976704 Test Loss: 0.1648404
+EarlyStopping counter: 8 out of 100
+Updating learning rate to 0.001
+Epoch: 52 cost time: 85.56690001487732
+Epoch: 52, Steps: 71 | Train Loss: 0.4070068 Vali Loss: 0.4000452 Test Loss: 0.1651297
+EarlyStopping counter: 9 out of 100
+Updating learning rate to 0.001
+Epoch: 53 cost time: 85.5053973197937
+Epoch: 53, Steps: 71 | Train Loss: 0.4081537 Vali Loss: 0.4007684 Test Loss: 0.1640520
+EarlyStopping counter: 10 out of 100
+Updating learning rate to 0.001
+Epoch: 54 cost time: 87.11295127868652
+Epoch: 54, Steps: 71 | Train Loss: 0.4060343 Vali Loss: 0.3954748 Test Loss: 0.1632507
+Validation loss decreased (0.397501 --> 0.395475).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 55 cost time: 85.47578239440918
+Epoch: 55, Steps: 71 | Train Loss: 0.4058718 Vali Loss: 0.3968689 Test Loss: 0.1645127
+EarlyStopping counter: 1 out of 100
+Updating learning rate to 0.001
+Epoch: 56 cost time: 85.46181631088257
+Epoch: 56, Steps: 71 | Train Loss: 0.4066005 Vali Loss: 0.3998414 Test Loss: 0.1649384
+EarlyStopping counter: 2 out of 100
+Updating learning rate to 0.001
+Epoch: 57 cost time: 85.45476269721985
+Epoch: 57, Steps: 71 | Train Loss: 0.4059132 Vali Loss: 0.3980641 Test Loss: 0.1649855
+EarlyStopping counter: 3 out of 100
+Updating learning rate to 0.001
+Epoch: 58 cost time: 85.50902938842773
+Epoch: 58, Steps: 71 | Train Loss: 0.4046763 Vali Loss: 0.4008830 Test Loss: 0.1655864
+EarlyStopping counter: 4 out of 100
+Updating learning rate to 0.001
+Epoch: 59 cost time: 87.16201901435852
+Epoch: 59, Steps: 71 | Train Loss: 0.4055705 Vali Loss: 0.3989804 Test Loss: 0.1638707
+EarlyStopping counter: 5 out of 100
+Updating learning rate to 0.001
+Epoch: 60 cost time: 85.5574426651001
+Epoch: 60, Steps: 71 | Train Loss: 0.4045285 Vali Loss: 0.3976887 Test Loss: 0.1644872
+EarlyStopping counter: 6 out of 100
+Updating learning rate to 0.001
+Epoch: 61 cost time: 85.5119640827179
+Epoch: 61, Steps: 71 | Train Loss: 0.4042604 Vali Loss: 0.4034460 Test Loss: 0.1640826
+EarlyStopping counter: 7 out of 100
+Updating learning rate to 0.001
+Epoch: 62 cost time: 85.54302978515625
+Epoch: 62, Steps: 71 | Train Loss: 0.4054976 Vali Loss: 0.3970967 Test Loss: 0.1646449
+EarlyStopping counter: 8 out of 100
+Updating learning rate to 0.001
+Epoch: 63 cost time: 87.17743682861328
+Epoch: 63, Steps: 71 | Train Loss: 0.4045647 Vali Loss: 0.4018999 Test Loss: 0.1653341
+EarlyStopping counter: 9 out of 100
+Updating learning rate to 0.001
+Epoch: 64 cost time: 85.52527117729187
+Epoch: 64, Steps: 71 | Train Loss: 0.4053915 Vali Loss: 0.3995238 Test Loss: 0.1649851
+EarlyStopping counter: 10 out of 100
+Updating learning rate to 0.001
+Epoch: 65 cost time: 85.456463098526
+Epoch: 65, Steps: 71 | Train Loss: 0.4050562 Vali Loss: 0.3996574 Test Loss: 0.1640451
+EarlyStopping counter: 11 out of 100
+Updating learning rate to 0.001
+Epoch: 66 cost time: 85.48227620124817
+Epoch: 66, Steps: 71 | Train Loss: 0.4052279 Vali Loss: 0.4007705 Test Loss: 0.1652483
+EarlyStopping counter: 12 out of 100
+Updating learning rate to 0.001
+Epoch: 67 cost time: 85.54276251792908
+Epoch: 67, Steps: 71 | Train Loss: 0.4046913 Vali Loss: 0.3989215 Test Loss: 0.1653921
+EarlyStopping counter: 13 out of 100
+Updating learning rate to 0.001
+Epoch: 68 cost time: 87.1985342502594
+Epoch: 68, Steps: 71 | Train Loss: 0.4039571 Vali Loss: 0.3982840 Test Loss: 0.1637766
+EarlyStopping counter: 14 out of 100
+Updating learning rate to 0.001
+Epoch: 69 cost time: 85.51764225959778
+Epoch: 69, Steps: 71 | Train Loss: 0.4034197 Vali Loss: 0.3993137 Test Loss: 0.1640114
+EarlyStopping counter: 15 out of 100
+Updating learning rate to 0.001
+Epoch: 70 cost time: 85.42272591590881
+Epoch: 70, Steps: 71 | Train Loss: 0.4029888 Vali Loss: 0.3968656 Test Loss: 0.1635834
+EarlyStopping counter: 16 out of 100
+Updating learning rate to 0.001
+Epoch: 71 cost time: 85.51320743560791
+Epoch: 71, Steps: 71 | Train Loss: 0.4037410 Vali Loss: 0.3982766 Test Loss: 0.1658716
+EarlyStopping counter: 17 out of 100
+Updating learning rate to 0.001
+Epoch: 72 cost time: 87.23756551742554
+Epoch: 72, Steps: 71 | Train Loss: 0.4028869 Vali Loss: 0.3994237 Test Loss: 0.1653724
+EarlyStopping counter: 18 out of 100
+Updating learning rate to 0.001
+Epoch: 73 cost time: 85.52536129951477
+Epoch: 73, Steps: 71 | Train Loss: 0.4028211 Vali Loss: 0.3994904 Test Loss: 0.1632516
+EarlyStopping counter: 19 out of 100
+Updating learning rate to 0.001
+Epoch: 74 cost time: 85.49573564529419
+Epoch: 74, Steps: 71 | Train Loss: 0.4020999 Vali Loss: 0.3985499 Test Loss: 0.1642672
+EarlyStopping counter: 20 out of 100
+Updating learning rate to 0.001
+Epoch: 75 cost time: 85.43355083465576
+Epoch: 75, Steps: 71 | Train Loss: 0.4039616 Vali Loss: 0.4016221 Test Loss: 0.1657550
+EarlyStopping counter: 21 out of 100
+Updating learning rate to 0.001
+Epoch: 76 cost time: 85.517893075943
+Epoch: 76, Steps: 71 | Train Loss: 0.4024193 Vali Loss: 0.4008168 Test Loss: 0.1649002
+EarlyStopping counter: 22 out of 100
+Updating learning rate to 0.001
+Epoch: 77 cost time: 87.16389656066895
+Epoch: 77, Steps: 71 | Train Loss: 0.4013886 Vali Loss: 0.4017809 Test Loss: 0.1646237
+EarlyStopping counter: 23 out of 100
+Updating learning rate to 0.001
+Epoch: 78 cost time: 85.45315885543823
+Epoch: 78, Steps: 71 | Train Loss: 0.4035845 Vali Loss: 0.3993444 Test Loss: 0.1651946
+EarlyStopping counter: 24 out of 100
+Updating learning rate to 0.001
+Epoch: 79 cost time: 85.48191690444946
+Epoch: 79, Steps: 71 | Train Loss: 0.4003804 Vali Loss: 0.3994561 Test Loss: 0.1645729
+EarlyStopping counter: 25 out of 100
+Updating learning rate to 0.001
+Epoch: 80 cost time: 85.45843148231506
+Epoch: 80, Steps: 71 | Train Loss: 0.4011770 Vali Loss: 0.3992724 Test Loss: 0.1641448
+EarlyStopping counter: 26 out of 100
+Updating learning rate to 0.001
+Epoch: 81 cost time: 85.29325890541077
+Epoch: 81, Steps: 71 | Train Loss: 0.4014778 Vali Loss: 0.3987431 Test Loss: 0.1651962
+EarlyStopping counter: 27 out of 100
+Updating learning rate to 0.001
+Epoch: 82 cost time: 85.54928135871887
+Epoch: 82, Steps: 71 | Train Loss: 0.4022222 Vali Loss: 0.3984126 Test Loss: 0.1646644
+EarlyStopping counter: 28 out of 100
+Updating learning rate to 0.001
+Epoch: 83 cost time: 85.50221133232117
+Epoch: 83, Steps: 71 | Train Loss: 0.4023233 Vali Loss: 0.4013752 Test Loss: 0.1640494
+EarlyStopping counter: 29 out of 100
+Updating learning rate to 0.001
+Epoch: 84 cost time: 85.43193197250366
+Epoch: 84, Steps: 71 | Train Loss: 0.4025659 Vali Loss: 0.4009258 Test Loss: 0.1643582
+EarlyStopping counter: 30 out of 100
+Updating learning rate to 0.001
+Epoch: 85 cost time: 85.5206127166748
+Epoch: 85, Steps: 71 | Train Loss: 0.4014945 Vali Loss: 0.3986936 Test Loss: 0.1650688
+EarlyStopping counter: 31 out of 100
+Updating learning rate to 0.001
+Epoch: 86 cost time: 87.30070471763611
+Epoch: 86, Steps: 71 | Train Loss: 0.4004566 Vali Loss: 0.3984104 Test Loss: 0.1645702
+EarlyStopping counter: 32 out of 100
+Updating learning rate to 0.001
+Epoch: 87 cost time: 85.47997283935547
+Epoch: 87, Steps: 71 | Train Loss: 0.3995734 Vali Loss: 0.3982243 Test Loss: 0.1646231
+EarlyStopping counter: 33 out of 100
+Updating learning rate to 0.001
+Epoch: 88 cost time: 85.43618273735046
+Epoch: 88, Steps: 71 | Train Loss: 0.4009453 Vali Loss: 0.3998548 Test Loss: 0.1638944
+EarlyStopping counter: 34 out of 100
+Updating learning rate to 0.001
+Epoch: 89 cost time: 85.53437113761902
+Epoch: 89, Steps: 71 | Train Loss: 0.4002772 Vali Loss: 0.3968439 Test Loss: 0.1644753
+EarlyStopping counter: 35 out of 100
+Updating learning rate to 0.001
+Epoch: 90 cost time: 87.3140025138855
+Epoch: 90, Steps: 71 | Train Loss: 0.4000699 Vali Loss: 0.3963773 Test Loss: 0.1637847
+EarlyStopping counter: 36 out of 100
+Updating learning rate to 0.001
+Epoch: 91 cost time: 85.52883625030518
+Epoch: 91, Steps: 71 | Train Loss: 0.4003713 Vali Loss: 0.3963468 Test Loss: 0.1637027
+EarlyStopping counter: 37 out of 100
+Updating learning rate to 0.001
+Epoch: 92 cost time: 85.50651383399963
+Epoch: 92, Steps: 71 | Train Loss: 0.4004581 Vali Loss: 0.3995354 Test Loss: 0.1663661
+EarlyStopping counter: 38 out of 100
+Updating learning rate to 0.001
+Epoch: 93 cost time: 85.44416284561157
+Epoch: 93, Steps: 71 | Train Loss: 0.4008943 Vali Loss: 0.4007469 Test Loss: 0.1646997
+EarlyStopping counter: 39 out of 100
+Updating learning rate to 0.001
+Epoch: 94 cost time: 87.34697842597961
+Epoch: 94, Steps: 71 | Train Loss: 0.4001773 Vali Loss: 0.4010961 Test Loss: 0.1650422
+EarlyStopping counter: 40 out of 100
+Updating learning rate to 0.001
+Epoch: 95 cost time: 85.51005387306213
+Epoch: 95, Steps: 71 | Train Loss: 0.3994464 Vali Loss: 0.3996617 Test Loss: 0.1645508
+EarlyStopping counter: 41 out of 100
+Updating learning rate to 0.001
+Epoch: 96 cost time: 85.4535219669342
+Epoch: 96, Steps: 71 | Train Loss: 0.3993880 Vali Loss: 0.4012788 Test Loss: 0.1643945
+EarlyStopping counter: 42 out of 100
+Updating learning rate to 0.001
+Epoch: 97 cost time: 85.35142517089844
+Epoch: 97, Steps: 71 | Train Loss: 0.4019254 Vali Loss: 0.4017209 Test Loss: 0.1641128
+EarlyStopping counter: 43 out of 100
+Updating learning rate to 0.001
+Epoch: 98 cost time: 85.58492374420166
+Epoch: 98, Steps: 71 | Train Loss: 0.4010462 Vali Loss: 0.4036632 Test Loss: 0.1655551
+EarlyStopping counter: 44 out of 100
+Updating learning rate to 0.001
+Epoch: 99 cost time: 85.4822998046875
+Epoch: 99, Steps: 71 | Train Loss: 0.4013987 Vali Loss: 0.4015060 Test Loss: 0.1656380
+EarlyStopping counter: 45 out of 100
+Updating learning rate to 0.001
+Epoch: 100 cost time: 85.51470613479614
+Epoch: 100, Steps: 71 | Train Loss: 0.4058569 Vali Loss: 0.3967327 Test Loss: 0.1654751
+EarlyStopping counter: 46 out of 100
+Updating learning rate to 0.001
+>>>>>>>testing : weather_96_96_TimeMachine_weather_ftM_sl96_ll48_pl96_n1128_n216_dr0.1_cin1_rin1_res1_dst256_dconv2_efact1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 10444
+mse:0.16325072944164276, mae:0.20738840103149414, rse:0.5318785309791565

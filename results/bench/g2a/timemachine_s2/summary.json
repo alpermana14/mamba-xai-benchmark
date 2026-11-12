@@ -1,0 +1,59 @@
+{
+  "args": {
+    "task": "g2a",
+    "model": "timemachine",
+    "seed": 2,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g2a",
+  "channels": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "y"
+  ],
+  "n_params": 644993,
+  "training": {
+    "stop": "max_epochs",
+    "best_epoch": 99,
+    "last_epoch": 100,
+    "best_val_y": 0.0008154191309586167,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.0008019269787706434,
+    "lr_at_end": 3.125e-05,
+    "n_lr_reductions": 5,
+    "loss_spike_epochs": [],
+    "verdict": "STILL IMPROVING at max epochs: increase --epochs",
+    "seconds": 253.07407236099243,
+    "seconds_per_epoch": 2.2256520986557007
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.0009545159991830587,
+      "trivial_mse": 1.0,
+      "skill": 0.9990454840008169,
+      "oracle_mse": null,
+      "accuracy": 1.0
+    },
+    "passes_quality_gate": true
+  }
+}

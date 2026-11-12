@@ -1,0 +1,51 @@
+{
+  "args": {
+    "task": "g1",
+    "model": "timemachine",
+    "seed": 0,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g1",
+  "channels": [
+    "x_lag",
+    "x_evt",
+    "r",
+    "dis_ar",
+    "dis_evt",
+    "y"
+  ],
+  "n_params": 655768,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 24,
+    "last_epoch": 34,
+    "best_val_y": 0.06329997628927231,
+    "oracle_val_y": 0.05562191446944042,
+    "gap_to_oracle": 1.1380402291627403,
+    "train_at_best": 0.05183754081123955,
+    "lr_at_end": 6.25e-05,
+    "n_lr_reductions": 4,
+    "loss_spike_epochs": [],
+    "verdict": "plateau after LR reductions: capacity/optimisation limit, not too few epochs",
+    "seconds": 193.55215883255005,
+    "seconds_per_epoch": 5.667758226394653
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.05662606656551361,
+      "trivial_mse": 1.0237843990325928,
+      "skill": 0.944689461356296,
+      "oracle_mse": 0.04894737508198508
+    },
+    "passes_quality_gate": true
+  }
+}

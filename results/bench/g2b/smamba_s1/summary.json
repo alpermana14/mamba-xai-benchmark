@@ -1,0 +1,59 @@
+{
+  "args": {
+    "task": "g2b",
+    "model": "smamba",
+    "seed": 1,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g2b",
+  "channels": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "y"
+  ],
+  "n_params": 312321,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 12,
+    "last_epoch": 22,
+    "best_val_y": 2.63896999967983e-05,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.0002467747449874878,
+    "lr_at_end": 0.000125,
+    "n_lr_reductions": 3,
+    "loss_spike_epochs": [],
+    "verdict": "overfitting (train fell, val rose after best epoch): more epochs will not help; regularise/more data",
+    "seconds": 36.14576292037964,
+    "seconds_per_epoch": 1.4377509355545044
+  },
+  "forecast": {
+    "test": {
+      "mse": 3.2985688449116424e-05,
+      "trivial_mse": 1.0,
+      "skill": 0.9999670143115509,
+      "oracle_mse": null,
+      "accuracy": 1.0
+    },
+    "passes_quality_gate": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "args": {
+    "task": "g2a",
+    "model": "plain",
+    "seed": 2,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "g2a",
+  "channels": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "y"
+  ],
+  "n_params": 154845,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 50,
+    "last_epoch": 52,
+    "best_val_y": 9.177166066365317e-05,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 6.331833361182362e-05,
+    "lr_at_end": 0.0005,
+    "n_lr_reductions": 1,
+    "loss_spike_epochs": [],
+    "verdict": "plateau after LR reductions: capacity/optimisation limit, not too few epochs",
+    "seconds": 443.23341488838196,
+    "seconds_per_epoch": 9.509891510009766
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.00010389434464741498,
+      "trivial_mse": 1.0,
+      "skill": 0.9998961056553526,
+      "oracle_mse": null,
+      "accuracy": 1.0
+    },
+    "passes_quality_gate": true
+  }
+}

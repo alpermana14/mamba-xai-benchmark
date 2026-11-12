@@ -1,0 +1,13 @@
+[12:54:29] smamba etth1 s0 exit 0 | mse:0.3864437937736511
+[13:51:40] timemachine etth1 s0 exit 0 | mse:0.3641504943370819
+[14:01:57] smamba weather s0 exit 0 | mse:0.16680361330509186
+[16:47:04] timemachine weather s0 exit 0 | mse:0.16325072944164276
+[16:50:58] smamba etth1 s1 exit 0 | mse:0.3884924054145813
+[17:48:10] timemachine etth1 s1 exit 0 | mse:0.3667219877243042
+[17:58:32] smamba weather s1 exit 0 | mse:0.16405831277370453
+[20:43:46] timemachine weather s1 exit 0 | mse:0.1672779619693756
+[20:47:52] smamba etth1 s2 exit 0 | mse:0.38577398657798767
+[21:45:05] timemachine etth1 s2 exit 0 | mse:0.36583638191223145
+[21:55:29] smamba weather s2 exit 0 | mse:0.16438443958759308
+[00:40:35] timemachine weather s2 exit 0 | mse:0.1659904271364212
+[00:40:35] ALL DONE

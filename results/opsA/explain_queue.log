@@ -1,0 +1,34 @@
+[00:40:54] explain results/opsA/smamba_etth1_s0
+[00:42:29] done results/opsA/smamba_etth1_s0 exit 0 | smamba_etth1_s0: test MSE 0.3864 (paper 0.386), 2785 test windows
+[00:42:30] explain results/opsA/timemachine_etth1_s0
+[00:53:07] done results/opsA/timemachine_etth1_s0 exit 0 | timemachine_etth1_s0: test MSE 0.3696 (paper 0.364), 2785 test windows
+[00:53:07] explain results/opsA/smamba_weather_s0
+[00:57:33] done results/opsA/smamba_weather_s0 exit 0 | smamba_weather_s0: test MSE 0.1668 (paper 0.165), 10444 test windows
+[00:57:33] explain results/opsA/timemachine_weather_s0
+[01:11:08] done results/opsA/timemachine_weather_s0 exit 0 | timemachine_weather_s0: test MSE 0.1610 (paper 0.164), 10444 test windows
+[01:11:08] explain results/opsA/smamba_etth1_s1
+[01:12:40] done results/opsA/smamba_etth1_s1 exit 0 | smamba_etth1_s1: test MSE 0.3885 (paper 0.386), 2785 test windows
+[01:12:40] explain results/opsA/timemachine_etth1_s1
+[01:23:14] done results/opsA/timemachine_etth1_s1 exit 0 | timemachine_etth1_s1: test MSE 0.3720 (paper 0.364), 2785 test windows
+[01:23:14] explain results/opsA/smamba_weather_s1
+[01:27:40] done results/opsA/smamba_weather_s1 exit 0 | smamba_weather_s1: test MSE 0.1641 (paper 0.165), 10444 test windows
+[01:27:40] explain results/opsA/timemachine_weather_s1
+[09:13:21] skip results/opsA/smamba_etth1_s0
+[09:13:21] skip results/opsA/timemachine_etth1_s0
+[09:13:21] skip results/opsA/smamba_weather_s0
+[09:13:21] skip results/opsA/timemachine_weather_s0
+[09:13:21] skip results/opsA/smamba_etth1_s1
+[09:13:21] skip results/opsA/timemachine_etth1_s1
+[09:13:21] skip results/opsA/smamba_weather_s1
+[09:13:21] explain results/opsA/timemachine_weather_s1
+[09:27:04] done results/opsA/timemachine_weather_s1 exit 0 | timemachine_weather_s1: test MSE 0.1650 (paper 0.164), 10444 test windows
+[09:27:04] explain results/opsA/smamba_etth1_s2
+[09:28:40] done results/opsA/smamba_etth1_s2 exit 0 | smamba_etth1_s2: test MSE 0.3858 (paper 0.386), 2785 test windows
+[09:28:40] explain results/opsA/timemachine_etth1_s2
+[09:39:17] done results/opsA/timemachine_etth1_s2 exit 0 | timemachine_etth1_s2: test MSE 0.3714 (paper 0.364), 2785 test windows
+[09:39:17] explain results/opsA/smamba_weather_s2
+[09:43:36] done results/opsA/smamba_weather_s2 exit 0 | smamba_weather_s2: test MSE 0.1644 (paper 0.165), 10444 test windows
+[09:43:36] explain results/opsA/timemachine_weather_s2
+[09:57:08] done results/opsA/timemachine_weather_s2 exit 0 | timemachine_weather_s2: test MSE 0.1638 (paper 0.164), 10444 test windows
+
+[09:57:09] ALL DONE

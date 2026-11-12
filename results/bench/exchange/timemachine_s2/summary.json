@@ -1,0 +1,53 @@
+{
+  "args": {
+    "task": "exchange",
+    "model": "timemachine",
+    "seed": 2,
+    "epochs": 100,
+    "patience": 10,
+    "lr_patience": 3,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "resume": false,
+    "device": "cuda",
+    "out": null
+  },
+  "task": "exchange",
+  "channels": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "OT"
+  ],
+  "n_params": 692720,
+  "training": {
+    "stop": "early_stop",
+    "best_epoch": 3,
+    "last_epoch": 13,
+    "best_val_y": 0.1667330116033554,
+    "oracle_val_y": NaN,
+    "gap_to_oracle": NaN,
+    "train_at_best": 0.09678120911121368,
+    "lr_at_end": 0.00025,
+    "n_lr_reductions": 2,
+    "loss_spike_epochs": [],
+    "verdict": "overfitting (train fell, val rose after best epoch): more epochs will not help; regularise/more data",
+    "seconds": 13.121458292007446,
+    "seconds_per_epoch": 0.8616938591003418
+  },
+  "forecast": {
+    "test": {
+      "mse": 0.1039762794971466,
+      "trivial_mse": 3.372042655944824,
+      "skill": 0.969165194481203,
+      "oracle_mse": null
+    },
+    "passes_quality_gate": true
+  }
+}
