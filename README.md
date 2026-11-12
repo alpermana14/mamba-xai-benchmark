@@ -1,6 +1,6 @@
 # mamba-xai-benchmark
 
-A pre-registered benchmark of attribution methods for Mamba time-series forecasters.
+A benchmark of attribution methods for Mamba time-series forecasters.
 
 The benchmark asks whether explanation methods built for Mamba beat generic ones, and how much the answer depends on how the evaluation is set up. It varies three axes.
 
@@ -9,8 +9,6 @@ The benchmark asks whether explanation methods built for Mamba beat generic ones
 3. **Masker of the faithfulness metric.** Deletion and insertion AOPC with a mean masker and an interpolation masker.
 
 It covers 14 methods and four forecasters, with three seeds each. The methods are Random, Gradient × Input, Integrated Gradients (plain and segment-aggregated), Kernel SHAP with channel, uniform-segment and MMD-segment players, GroupSegment-SHAP, MambaLRP and step-size-guided SHAP. The forecasters are PlainMamba (scan over time), S-Mamba (scan over variates), TimeMachine (scan over channels) and iTransformer. The public data are ETTh1 and Weather, with ETTh2, ETTm1 and Exchange Rate held out. S-Mamba and TimeMachine were also retrained with their official code to check the public-data findings.
-
-The decision rules were written before the experiments and are reproduced in [PREREGISTRATION.md](PREREGISTRATION.md).
 
 ## Main findings
 
